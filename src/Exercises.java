@@ -15,9 +15,24 @@ public class Exercises {
 	}
 	
 	public ArrayList<String> endsMeet(ArrayList<String> values, int n) {
-		// write your code here
-		
-		return null;	// default return value to ensure compilation
+
+		ArrayList<String> empty = new ArrayList<String>();
+		if (values == null || values.size() < n || n <= 0) {
+			return empty;
+		}
+
+		ArrayList<String> firstLast = new ArrayList<String>();
+		for (int i = 0; i < n; i++) {
+			firstLast.add(i, values.get(i));
+		}
+
+		int placeHolder = n;
+		for (int i = n; i < 2*n; i++) {
+			firstLast.add(i, values.get(values.size()-placeHolder));
+			placeHolder--;
+		}
+
+		return firstLast;	// default return value to ensure compilation
 	}
 	
 	public int difference(ArrayList<Integer> numbers) {
