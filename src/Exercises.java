@@ -7,7 +7,7 @@ public class Exercises {
 			return false;
 		}
 		
-		if (a.get(0) == b.get(0) || a.get(a.size-1) == b.get(b.size-1)) {
+		if ((a.get(a.size()-1) == b.get(b.size()-1)) || (a.get(0) == b.get(0))){
 			return true;
 		}
 		
