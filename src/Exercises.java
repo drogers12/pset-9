@@ -60,6 +60,7 @@ public class Exercises {
 	
 	public double biggest(ArrayList<Double> numbers) {
 		// write your code here
+		
 		if (numbers == null || numbers.size() < 3 || numbers.size() % 2 == 0) {
 			return -1;
 		} else {
@@ -87,8 +88,28 @@ public class Exercises {
 	public ArrayList<String> middle(ArrayList<String> values) {
 		// write your code here
 		
-		return null;	// default return value to ensure compilation
-	}
+		ArrayList<String> empty = new ArrayList<String>();
+		if (values == null || values.size() < 3 || (values.size() % 2) == 0) {
+			return empty;
+		}
+
+		for (int i = 0; i < values.size(); i++) {
+			if (values.get(i) == null) {
+				return empty;
+			}
+		}
+
+		int middle = values.size() / 2;
+		int first = middle - 1;
+		int last = middle + 1;
+
+		ArrayList<String> result = new ArrayList<String>();
+		result.add(values.get(first));
+		result.add(values.get(middle));
+		result.add(values.get(last));
+		return result;
+	}	
+
 
 	public boolean increasing(ArrayList<Integer> numbers) {
 		// write your code here
