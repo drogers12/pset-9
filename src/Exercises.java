@@ -15,7 +15,6 @@ public class Exercises {
 	}
 	
 	public ArrayList<String> endsMeet(ArrayList<String> values, int n) {
-		// write your code here
 
 		ArrayList<String> empty = new ArrayList<String>();
 		if (values == null || values.size() < n || n <= 0) {
@@ -37,7 +36,6 @@ public class Exercises {
 	}
 	
 	public int difference(ArrayList<Integer> numbers) {
-		// write your code here
 		
 		if (numbers == null || numbers.size() < 1) {
 			return -1;
@@ -58,7 +56,6 @@ public class Exercises {
 	}
 	
 	public double biggest(ArrayList<Double> numbers) {
-		// write your code here
 		
 		if (numbers == null || numbers.size() < 3 || numbers.size() % 2 == 0) {
 			return -1;
@@ -85,7 +82,6 @@ public class Exercises {
 	}
 	
 	public ArrayList<String> middle(ArrayList<String> values) {
-		// write your code here
 		
 		ArrayList<String> empty = new ArrayList<String>();
 		if (values == null || values.size() < 3 || (values.size() % 2) == 0) {
@@ -111,7 +107,6 @@ public class Exercises {
 
 
 	public boolean increasing(ArrayList<Integer> numbers) {
-		// write your code here
 		
 		if (numbers == null || numbers.size() < 3) {
 			return false;
@@ -126,7 +121,6 @@ public class Exercises {
 	}
 	
 	public boolean everywhere(ArrayList<Integer> numbers, int x) {
-		// write your code here
 		
 		if (numbers == null || numbers.size() < 1) {
 			return false;
@@ -146,7 +140,6 @@ public class Exercises {
 	}
 	
 	public boolean consecutive(ArrayList<Integer> numbers) {
-		// write your code here
 		
 		if (numbers == null || numbers.size() < 3) {
 			return false;
@@ -166,7 +159,6 @@ public class Exercises {
 	}
 	
 	public boolean balance(ArrayList<Integer> numbers) {
-		// write your code here
 		
 		if (numbers == null || numbers.size() < 2) {
 			return false;
@@ -187,7 +179,6 @@ public class Exercises {
 	}
 	
 	public int clumps(ArrayList<String> values) {
-		// write your code here
 		
 		if (values == null) {
 			return -1;
