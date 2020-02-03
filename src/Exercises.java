@@ -190,6 +190,22 @@ public class Exercises {
 	public int clumps(ArrayList<String> values) {
 		// write your code here
 		
-		return -1;		// default return value to ensure compilation
+		if (values == null) {
+			return -1;
+		} else {
+			int clumps = 0;
+			boolean isClump = false;
+		  for(int i = 0; i < values.size() - 1; i++) {
+			  if (isClump) {
+				  if(!values.get(i).equals(values.get(i+1))) {
+					  isClump = false;
+				  }
+			  } else if (values.get(i).equals(values.get(i+1))) {
+				  isClump = true;
+				  clumps++;
+			  }
+		  }
+		  return clumps;
+		}
 	}
 }
