@@ -169,7 +169,22 @@ public class Exercises {
 	public boolean balance(ArrayList<Integer> numbers) {
 		// write your code here
 		
-		return false;	// default return value to ensure compilation
+		if (numbers == null || numbers.size() < 2) {
+			return false;
+		} else {
+			int left = 0;
+			int right = 0;
+			for(int x = 0; x < numbers.size(); x++) {
+				right += numbers.get(x);
+			}
+			for(int i = 0; i < numbers.size()-1; i++) {
+				if(left != right) {
+					left += numbers.get(i);
+					right -= numbers.get(i);
+			    }
+			}
+		return left == right;
+		}
 	}
 	
 	public int clumps(ArrayList<String> values) {
