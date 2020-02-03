@@ -55,7 +55,6 @@ public class Exercises {
 			}
 			return max-min;
 		}
-				// default return value to ensure compilation
 	}
 	
 	public double biggest(ArrayList<Double> numbers) {
