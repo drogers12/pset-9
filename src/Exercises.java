@@ -33,7 +33,7 @@ public class Exercises {
 			placeHolder--;
 		}
 
-		return firstLast;	// default return value to ensure compilation
+		return firstLast;	
 	}
 	
 	public int difference(ArrayList<Integer> numbers) {
