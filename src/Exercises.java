@@ -82,7 +82,7 @@ public class Exercises {
 				return first;
 			}
 		}
-		return -1; //default value
+		return -1; 
 	}
 	
 	public ArrayList<String> middle(ArrayList<String> values) {
